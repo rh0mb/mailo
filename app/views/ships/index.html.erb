@@ -11,7 +11,7 @@
 
 <% @ships.each do |ship| %>
   <tr>
-    <td><%= ship.name %></td>
+    <td>Name</td>
     <td><%= ship.destination %></td>
     <td><%= link_to 'Show', ship %></td>
     <td><%= link_to 'Edit', edit_ship_path(ship) %></td>
