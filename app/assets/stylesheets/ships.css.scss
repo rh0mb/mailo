@@ -1,3 +1,353 @@
 // Place all the styles related to the ships controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+// Place all the styles related to the ships controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/*******************************************************************************************************
+Homepage (index)
+
+******************************************************************************************************/
+body {
+background-image:url('streets-new-york.jpg');
+background-repeat:no-repeat;
+background-position: top;
+background-size: 1290px 700px;
+}
+
+/*************************************
+Welcome message + white background
+
+************************************/
+
+#minfo {
+	background: white;
+	margin-top: 150px;
+	width: 550px;
+	height: 250px;
+	border-radius: 5px;
+}
+
+
+#welcome {
+	float: left;
+	margin-top: 10px;
+	margin-left: 70px;
+}
+
+#welcomeinfo {
+	float: left;
+	width: 500px;
+	text-align: center;
+	margin-top: 30px;
+
+}
+
+/*************************************
+Button
+
+************************************/
+
+.mailosignuphome {
+	float: left;
+	margin-top: 20px;
+	margin-left: 160px;
+	color: white;
+	background: #3385AD;
+	padding: 15px 80px;
+	border: none;
+	border-radius: 5px;
+	font-size: 1.5em;
+}
+
+.mailosignuphome:hover {
+	background-color: #4791B5;
+}
+
+
+/*************************************
+How it works pics
+************************************/
+
+
+#howitworkstitle {
+	margin-top: 280px;
+	text-align: center;
+	color: gray;
+}
+
+/*************************************
+How it works pics
+************************************/
+
+#howitworkspics {
+	margin-top: 40px;
+}
+
+#cartrippic {
+	width: 250px;
+	float: right;
+	margin-right: 10px;
+}
+
+#couchscale {
+	width: 200px;
+	float: right;
+	margin-right: 50px;
+	margin-top: 10px;
+}
+
+#contract {
+	width: 115px;
+	float: right;
+	margin-right: 90px;
+	margin-top: 30px;
+}
+
+/*************************************
+
+How it works text
+
+************************************/
+
+#infotext {
+	text-align: center;
+	color: gray;
+}
+
+#workstitle {
+	color: #3385AD;
+}
+
+
+
+
+/*************************************
+Recent Trips
+************************************/
+
+
+#recent {
+	margin-top: 150px;
+	text-align: center;
+	color: gray;
+}
+
+
+
+/*************************************
+Recent Trips List
+************************************/
+
+.list {
+
+	margin-top: 100px;
+}
+
+#shiplist {
+	background: #F2F2F2;
+	padding: 10px 5px;
+	border-radius: 5px;
+}
+
+
+/*************************************
+			Our Cool Users
+************************************/
+
+
+#users {
+	margin-top: 500px;
+	text-align: center;
+	color: gray;
+}
+
+#quote {
+	width: 700px;
+	text-align: center;
+	margin-top: 50px;
+	color: gray;
+	float: left;
+	margin-left: 120px;
+}
+
+#quotename {
+	margin-top: 20px;
+}
+
+#mailouser {
+	float: left;
+	width: 200px;
+	margin-top: 50px;
+	margin-left: 55px;
+}
+
+
+
+/*********************************************************************************************************
+
+			Sign UP page CSS
+
+********************************************************************************************************/
+
+
+
+#usersignup {
+	background: white;
+	margin-top: 50px;
+	width: 280px;
+	height: 430px;
+	border-radius: 5px;
+}
+
+#endlinks {
+	margin-top: 20px;
+}
+
+		/*************************************
+					Button
+		************************************/
+
+.mailosignupbutton {
+	float: left;
+	margin-top: 10px;
+	color: white;
+	background: #3385AD;
+	padding: 10px 50px;
+	border: none;
+	border-radius: 5px;
+	font-size: 1em;
+}
+
+.mailosignupbutton:hover {
+	background-color: #4791B5;
+}
+
+
+
+/*********************************************************************************************************
+
+			Sign IN page CSS
+
+********************************************************************************************************/
+
+#usersignin {
+	background: white;
+	margin-top: 50px;
+	width: 280px;
+	height: 420px;
+	border-radius: 5px;
+}
+
+#endlinksin {
+	margin-top: 2px;
+}
+
+		/*************************************
+					Button
+		************************************/
+
+.mailosignup {
+	float: left;
+	margin-top: 10px;
+	margin-left: 0px;
+	margin-bottom: 20px;
+	color: white;
+	background: #3385AD;
+	padding: 10px 50px;
+	border: none;
+	border-radius: 5px;
+	font-size: 1em;
+}
+
+
+.mailosignup:hover {
+	background-color: #4791B5;
+}
+
+
+
+/*********************************************************************************************************
+
+Edit my account
+
+********************************************************************************************************/
+
+#editaccount {
+	background: white;
+	width: 330px;
+	height: 450px;
+	border-radius: 5px;
+}
+
+#deleteaccount {
+	background: white;
+	margin-top: 35px;
+	width: 330px;
+	height: 105px;
+	border-radius: 5px;
+	opacity:.5;
+}
+
+#deleteaccount:hover {
+	opacity: 1;
+}
+
+#updateplease {
+	float: left;
+	margin-top: 5px;
+	margin-left: 0px;
+	margin-bottom: 20px;
+	color: white;
+	background: #3385AD;
+	padding: 10px 50px;
+	border: none;
+	border-radius: 5px;
+	font-size: 1em;
+}
+
+#updateplease:hover {
+	background-color: #4791B5;
+}
+
+
+/*********************************************************************************************************
+
+Forgot My Password
+
+********************************************************************************************************/
+
+
+#forgot {
+	background: white;
+	margin-top: 100px;
+	width: 330px;
+	height: 300px;
+	border-radius: 5px;
+}
+
+
+/*********************************************************************************************************
+
+New SHipment!
+
+********************************************************************************************************/
+
+
+#newshipmentuser {
+	background: white;
+	margin-top: 100px;
+	width: 330px;
+	height: 300px;
+	border-radius: 5px;
+}
+
+
+
+
+
+
+
+

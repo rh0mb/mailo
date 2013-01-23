@@ -7,38 +7,65 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-	<div class="navbar navbar-fixed-top">
-		<div class="navbar-inner">
-			<div class="container">
-				<a href="#" class="brand">Mailo</a>
-				<ul class="nav">
-					<li><%= link_to "All Ships", ships_path %></li>
-				</ul>
-				<ul class="nav pull-right">
-					<% if user_signed_in? %>
-						<li><%= link_to current_user.first_name, edit_user_registration_path %></li>
-						<li><%= link_to "Log Out", destroy_user_session_path, method: :delete %></li>
-					<% else %>
-						<li><%= link_to "Register", new_user_registration_path %></li>
-						<li><%= link_to "Login", new_user_session_path %></li>
 
-					<% end %>
+<!---------- Navbar ---------->
 
+
+		<div class="navbar navbar-fixed-top">
+			<div class="navbar-inner">
+				<div class="container">
+					<div class="span6" id="logo">
+	        			<%= image_tag("mailologologo.png", :alt => "mailo") %>
+	      			</div>
+	      			<div class="span6" id="appnavagation">
+					<ul class="nav pull-right">
+							<li><%= link_to "All Shipments", ships_path %></li>
+								<% if user_signed_in? %>
+							<li><%= link_to current_user.email, edit_user_registration_path %></li>
+							<li><%= link_to "Log Out", destroy_user_session_path, method: :delete %></li>
+								<% else %>
+							<li><%= link_to "Sign Up", new_user_registration_path %></li>
+							<li><%= link_to "Login", new_user_session_path %></li>
+
+						<% end %>
+					</ul>
+				</div>
+					</div>
 				</div>
 			</div>
-		</div>
 
-<div class="container">
-	<% flash.each do |type, message| %>
-		<div class="alert <%= flash_class type %>">
-			<button class="close" data-dismiss="alert">x</button>
-			<%= message %>
-		</div>
+<!---------- list stuff ---------->
 
-	<% end %>
-	
-	<%= yield %>
-</div>
+			<div class="container">
+				<% flash.each do |type, message| %>
+					<div class="alert <%= flash_class type %>">
+						<button class="close" data-dismiss="alert">x</button>
+						<%= message %>
+					</div>
+
+				<% end %>
+				
+				<%= yield %>
+			</div>
+
+<!---------- final image ---------->
+
+			<div class="span12">
+			    <div id="bottomicon">
+			      <%= image_tag("bottomicon.png", :alt => "bottom icon") %>
+			    </div>
+			</div>
+
+<!---------- End nav ---------->
+
+			<div class="span24" id="endoptions">
+			  <ul>
+			    <li><a href="../MailoWebsite/mailoabout.html">About</a></li>
+			    <li><a href="../MailoWebsite/mailocompany.html">Company</a></li>
+			    <li><a href="#">Blog</a></li>
+			    <li><a href="#">Help</a></li>
+			  </ul>
+			</div>
 
 
 </body>

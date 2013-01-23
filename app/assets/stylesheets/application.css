@@ -12,10 +12,77 @@
  *= require_tree .
  */
 
+/********************************
+	application - css baby!
+********************************/ 
+
 body {
-	padding-top: 40px;
+	padding-top: 100px;
+}
+
+/********************************
+	Nav bar
+********************************/ 
+
+.navbar-inner {
+  opacity:1;
 }
 
 .alert {
+	margin-top: 5px;
+}
+
+#logo {
+	width: 120px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	list-style: none;
+}
+
+#appnavagation {
+	list-style: none;
+	float: right;
 	margin-top: 10px;
 }
+
+#appnavagation li {
+	float: left;
+	margin-right: 10px;
+}
+
+/*************************************
+Final Image
+************************************/
+#bottomicon {
+	width: 200px;
+	float: left;
+	margin-left: 500px;
+	margin-top: 300px;
+}
+
+/********************************
+	end nav
+****************************/ 
+
+#endoptions {
+	float: right;
+	list-style: none;
+	margin-top: 50px;
+	margin-right: 550px;
+	font-family: sans-serif;
+	font-size: 1.1em;
+}
+
+#endoptions li{
+	float: left;
+	margin-left: 20px;
+	list-style: none;
+	padding-bottom: 50px;
+}
+
+
+
+
+
+
+
